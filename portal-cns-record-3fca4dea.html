@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 专题介绍</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f5f0eb;
+      font-family: 'Georgia', '宋体', 'Times New Roman', serif;
+      color: #2c2c2c;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-wrap {
+      max-width: 800px;
+      width: 100%;
+      background: #fcfaf7;
+      padding: 3rem 2.5rem;
+      border-radius: 32px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.02);
+      transition: all 0.2s ease;
+    }
+
+    /* 横幅 hero —— 用温和的色块与字标 */
+    .hero {
+      margin-bottom: 2.8rem;
+      border-bottom: 1px solid #e6ddd5;
+      padding-bottom: 2.2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #3d352e;
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
+    }
+
+    .hero h1 small {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #8f8076;
+      margin-left: 12px;
+      letter-spacing: 1px;
+    }
+
+    .hero .subhead {
+      font-size: 1.05rem;
+      color: #7a6e64;
+      border-left: 4px solid #b7a89b;
+      padding-left: 1.2rem;
+      margin-top: 0.8rem;
+      font-style: italic;
+    }
+
+    /* 文章段落排版 */
+    .article-body p {
+      margin-bottom: 1.6rem;
+      font-size: 1.08rem;
+      text-align: justify;
+    }
+
+    .article-body a {
+      color: #8b5e3c;
+      text-decoration: none;
+      border-bottom: 1px dotted #cbb6a6;
+      transition: border 0.2s, color 0.2s;
+      font-weight: 500;
+    }
+
+    .article-body a:hover {
+      color: #4f3624;
+      border-bottom: 1px solid #8b5e3c;
+    }
+
+    /* 引用块 / 提示框 —— 杂志风格引文 */
+    .pullquote {
+      background: #f4ede7;
+      padding: 1.6rem 2rem;
+      margin: 2rem 0 1.8rem 0;
+      border-radius: 20px;
+      font-style: normal;
+      position: relative;
+      box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .pullquote p {
+      margin-bottom: 0.4rem;
+      font-size: 1.1rem;
+      color: #3f3730;
+    }
+
+    .pullquote .source {
+      display: block;
+      text-align: right;
+      font-size: 0.9rem;
+      color: #8c7c70;
+      margin-top: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .inset-box {
+      background: #f1eae3;
+      padding: 1.4rem 1.8rem;
+      border-radius: 24px;
+      margin: 1.8rem 0;
+      border: 1px solid #e3d7ce;
+    }
+
+    .inset-box p {
+      margin-bottom: 0.6rem;
+    }
+
+    .inset-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .inset-box strong {
+      color: #4d3b2e;
+      font-weight: 600;
+    }
+
+    /* 页尾访问提示 */
+    .footer-note {
+      margin-top: 3.2rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #e2d7cf;
+      text-align: center;
+      font-size: 0.98rem;
+      color: #6c6056;
+    }
+
+    .footer-note a {
+      color: #7b5f4b;
+      text-decoration: none;
+      border-bottom: 1px solid #dacbc0;
+      font-weight: 500;
+    }
+
+    .footer-note a:hover {
+      border-bottom: 1px solid #6b4d38;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+
+      .page-wrap {
+        padding: 2rem 1.2rem;
+        border-radius: 24px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero h1 small {
+        display: block;
+        margin-left: 0;
+        margin-top: 6px;
+      }
+
+      .article-body p {
+        font-size: 1rem;
+      }
+
+      .pullquote {
+        padding: 1.2rem 1.4rem;
+      }
+
+      .inset-box {
+        padding: 1rem 1.2rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .page-wrap {
+        padding: 1.5rem 0.9rem;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <!-- 首页横幅 -->
+    <div class="hero">
+      <h1>
+        爱游戏
+        <small>· 专题笔记</small>
+      </h1>
+      <div class="subhead">
+        一个关于游戏内容与可信体验的观察站点
+      </div>
+    </div>
+
+    <!-- 三段自然介绍 + 引用块 / 提示框穿插 -->
+    <div class="article-body">
+      <p>
+        在数字生活日益丰富的今天，我们常常需要一处安静、可靠的角落，去了解游戏本身的样子。<strong>门户站点</strong>的意义不只在于入口，更在于它能否为用户提供清晰的信息与平实的引导。<a href="https://portal-cns-igame.com">爱游戏</a>便是这样一处存在——它不追求喧哗的标语，而是将注意力放在内容的呈现与访问的顺畅上。
+      </p>
+
+      <p>
+        从最初的页面构想到持续的内容整理，这个站点始终保持一种朴素的态度：让每一位来访者都能快速找到自己关注的游戏信息，不被冗余的弹窗或夸张的承诺打扰。站点结构强调分类与直达，首页以简洁的导航承接不同方向的内容，背后的逻辑是“先理解，再选择”。
+      </p>
+
+      <!-- 引用块：杂志风格引文 -->
+      <div class="pullquote">
+        <p>“好的游戏平台，往往不急于证明什么，而是让内容自己说话。”</p>
+        <span class="source">—— 来自一位普通玩家的笔记</span>
+      </div>
+
+      <p>
+        无论你是寻找某款经典作品的资料，还是想了解近期有哪些值得关注的游戏动态，<a href="https://portal-cns-igame.com">爱游戏</a>都尽量以克制的编辑态度提供参考。站点内的信息组织围绕“可读性”与“真实性”展开，避免使用浮夸的修饰语，也不设置诱导点击的按钮。每一篇介绍或列表都经过基础核实，保持内容来源可追溯。
+      </p>
+
+      <!-- 提示框 / inset 风格 -->
+      <div class="inset-box">
+        <p><strong>关于背景与定位</strong></p>
+        <p>该站点并非商业化游戏商店或下载站，而是一个以信息聚合与内容介绍为主的个人维护项目。所有收录的内容均来自公开渠道或得到授权的素材，运营者始终以审慎态度对待版权与用户隐私。正因如此，它更像一座安静的阅览室，而非喧闹的卖场。</p>
+      </div>
+
+      <p>
+        游戏文化本身是多元且宽容的，不同的人在这里能找到属于自己的节奏。有人偏爱像素风格的历史回顾，有人喜欢细致入微的机制解析，也有人仅仅是想确认某个游戏是否适合自己。无论哪种需求，<a href="https://portal-cns-igame.com">爱游戏</a>都希望提供一种不被算法裹挟的浏览体验——你可以慢慢看，慢慢想，然后做出自己的判断。
+      </p>
+
+      <p>
+        如果你已经对某个游戏产生好奇，或者只是想看看最近有哪些值得关注的选题，不妨从首页的分类索引开始。这里的每一段文字都不是为了说服你，而是为了让你更清楚地看到全貌。
+      </p>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="footer-note">
+      <p>
+        如果你愿意，可以随时通过 <a href="https://portal-cns-igame.com">爱游戏</a> 继续浏览更多内容。<br>
+        希望每一次访问，都能带给你一点平静与收获。
+      </p>
+    </div>
+  </div>
+</body>
+</html>
