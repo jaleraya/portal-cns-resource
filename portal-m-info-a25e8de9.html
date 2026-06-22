@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1xbet 稳定访问入口 | 页面导航与功能说明</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background-color: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
+        a { color: #0071e3; text-decoration: none; transition: color 0.2s; }
+        a:hover { color: #004b9a; text-decoration: underline; }
+        .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hero 区域 — 深色头图 */
+        .hero {
+            background: linear-gradient(145deg, #0b1a2e 0%, #132b44 70%, #1a3d5c 100%);
+            color: #f0f4f8;
+            padding: 80px 0 70px;
+            text-align: center;
+            border-bottom: 4px solid #3a7ca5;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.88;
+        }
+        .hero .tagline {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(4px);
+            padding: 8px 24px;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #c0d6e8;
+        }
+
+        /* 浅色正文区 */
+        .main-content {
+            background: #ffffff;
+            padding: 50px 0 40px;
+            border-radius: 0 0 24px 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        /* 优势卡片区 */
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            margin: 10px 0 50px;
+        }
+        .card {
+            background: #f8f9fb;
+            border-radius: 20px;
+            padding: 28px 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e8ecf1;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #1d3b5c;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card h3::before {
+            content: "▹";
+            color: #3a7ca5;
+            font-size: 1.3rem;
+        }
+        .card p {
+            color: #3a3f47;
+            font-size: 0.98rem;
+        }
+
+        /* 说明区 */
+        .explanation {
+            background: #f0f4fa;
+            border-radius: 24px;
+            padding: 36px 32px;
+            margin: 10px 0 36px;
+            border-left: 5px solid #3a7ca5;
+        }
+        .explanation h2 {
+            font-size: 1.6rem;
+            font-weight: 550;
+            margin-bottom: 20px;
+            color: #0b1a2e;
+        }
+        .explanation p {
+            margin-bottom: 14px;
+            color: #1f2a38;
+        }
+        .explanation .link-sentence {
+            margin-top: 18px;
+            font-size: 1.05rem;
+            background: white;
+            padding: 16px 22px;
+            border-radius: 16px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        /* FAQ 摘要 */
+        .faq-summary {
+            margin: 40px 0 20px;
+        }
+        .faq-summary h2 {
+            font-size: 1.6rem;
+            font-weight: 550;
+            margin-bottom: 24px;
+            color: #0b1a2e;
+            border-bottom: 2px solid #e0e6ed;
+            padding-bottom: 10px;
+        }
+        .faq-item {
+            padding: 16px 0;
+            border-bottom: 1px solid #edf0f4;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q {
+            font-weight: 600;
+            color: #1d3b5c;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .faq-q::before {
+            content: "Q";
+            background: #3a7ca5;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .faq-a {
+            color: #3a3f47;
+            margin-left: 30px;
+            font-size: 0.96rem;
+        }
+        .faq-a a {
+            font-weight: 500;
+        }
+
+        /* 底部链接 */
+        .footer-links {
+            margin-top: 48px;
+            padding: 30px 0 20px;
+            border-top: 1px solid #e0e6ed;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-links .nav-text {
+            color: #5a6a7a;
+            font-size: 0.9rem;
+        }
+        .footer-links .nav-text a {
+            color: #3a7ca5;
+        }
+        .footer-note {
+            font-size: 0.85rem;
+            color: #7b8b9b;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            .hero { padding: 50px 0 40px; }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .advantage-grid { grid-template-columns: 1fr; gap: 18px; }
+            .explanation { padding: 24px 20px; }
+            .faq-summary h2 { font-size: 1.3rem; }
+            .footer-links { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>稳定入口 · 清晰导航</h1>
+            <p>从页面结构到访问方式，我们为你梳理了关于 1xbet 的实用指引。<br>每一次打开，都更从容。</p>
+            <span class="tagline">面向日常使用的页面说明</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <!-- 优势区 -->
+            <div class="advantage-grid">
+                <div class="card">
+                    <h3>页面响应快</h3>
+                    <p>整体架构经过优化，加载与切换流程顺畅，减少等待时间。</p>
+                </div>
+                <div class="card">
+                    <h3>导航清晰</h3>
+                    <p>主要功能入口集中在同一视图内，方便快速定位所需板块。</p>
+                </div>
+                <div class="card">
+                    <h3>内容分区</h3>
+                    <p>信息按用途分组，避免杂乱堆叠，阅读体验更简明。</p>
+                </div>
+                <div class="card">
+                    <h3>持续维护</h3>
+                    <p>页面结构和说明会随反馈迭代，保持与使用习惯同步。</p>
+                </div>
+            </div>
+
+            <!-- 说明区：稳定入口与页面说明 -->
+            <div class="explanation">
+                <h2>关于访问与页面结构</h2>
+                <p>对于经常使用 <a href="https://portal-m-1xbet.com">1xbet</a> 的朋友来说，一个长期稳定、不会被频繁调整的入口非常重要。本页面定位为辅助导航页，不涉及任何账户操作或交易功能，仅提供指向主要站点的链接以及周边功能介绍。</p>
+                <p>页面左侧区域集中放置了核心服务模块的跳转点，右侧则展示近期公告与常见问题摘要。所有链接均指向已验证的域名，并定期检查可用性。如果你在访问主站时遇到延迟，可以尝试刷新或通过本页底部的备用指引获取帮助。</p>
+                <p>此外，我们在这版布局中强化了移动端的适配——按钮间距、字体大小、卡片排列都针对小屏幕做了单独调整，确保在手机上也能够流畅浏览。</p>
+                <div class="link-sentence">
+                    📌 如果你还没有添加书签，建议直接将 <a href="https://portal-m-1xbet.com">1xbet</a> 收藏到浏览器工具栏，方便日常快速打开。
+                </div>
+            </div>
+
+            <!-- FAQ 摘要 -->
+            <div class="faq-summary">
+                <h2>常见问题摘要</h2>
+                <div class="faq-item">
+                    <div class="faq-q">为什么需要单独的入口页面？</div>
+                    <div class="faq-a">部分用户反馈直接访问主站时偶尔遇到路由跳转延迟，这个页面作为一块“稳定踏板”，提供固定的链接和功能说明，减少记忆成本。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">这里的链接是否安全？</div>
+                    <div class="faq-a">所有链接均指向官方域名 <a href="https://portal-m-1xbet.com">1xbet</a>，页面本身不含任何第三方脚本或重定向。建议浏览器开启 HTTPS 加密提醒。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">页面多久更新一次？</div>
+                    <div class="faq-a">结构内容根据使用反馈不定期优化；链接有效性每 72 小时检查一次。如果有变动会在这里标注。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">移动端是否适配？</div>
+                    <div class="faq-a">完全适配。卡片与按钮在手机屏幕下会自动堆叠与缩放，且保留足够点按区域。</div>
+                </div>
+            </div>
+
+            <!-- 底部链接 -->
+            <div class="footer-links">
+                <div class="nav-text">
+                    <span>主站：</span><a href="https://portal-m-1xbet.com">1xbet</a>
+                    <span style="margin:0 12px; color:#c0c8d2;">·</span>
+                    <span>备用路径：<a href="https://portal-m-1xbet.com" style="font-weight:450;">1xbet</a></span>
+                </div>
+                <div class="footer-note">
+                    页面说明 · 非官方运营 · 仅作导航参考
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
